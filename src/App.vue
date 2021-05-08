@@ -1,28 +1,31 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+    <v-app>
+        <Message ref="msg"></Message>
+        <transition name="body">
+            <router-view></router-view>
+        </transition>
+    </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Message from "./components/shared/Message";
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
-</script>
+    name: "App",
+    components: {
+        Message,
+    },
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+    data: () => ({
+        logged: false, // FIXME: Salvar o token no localstorage
+    }),
+
+    mounted() {
+        if (this.logged) {
+            this.$router.replace({ name: "main" });
+        } else {
+            this.$router.replace({ name: "login" });
+        }
+    },
+};
+</script>
