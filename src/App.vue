@@ -24,7 +24,7 @@ export default {
         if (this.logged) {
             this.$router.replace({ name: "main" });
         } else {
-            this.$router.replace({ name: "login" });
+            this.$router.replace({ name: "login" }); 
         }
     },
 };
