@@ -55,7 +55,7 @@ export default {
                 .post("https://api.elcoma.com.br/api/visits/login", this.dataToSend)
                 .then((res) => {
                     if (res.data && res.data.success == true) {
-                        res.data.token; // Salvar o token no localstorage para ser passado nas proximas requisições
+                        localStorage.setItem("token", res.data.token);
 
                         this.$router.replace({ name: "main" });
                         this.$eventHub.$emit("msgSuccess", "Login efetuado com sucesso.");

@@ -7,7 +7,15 @@ import VueRouter from 'vue-router';
 import Login from './components/Login';
 import Main from './components/Main';
 
-Vue.use(VueRouter)
+Vue.use(VueRouter);
+
+
+axios.interceptors.request.use(req => {
+  req.headers.Authorization = localStorage.getItem("token");
+  return req;
+}, err => {
+  return Promise.reject(err);
+});
 
 Vue.prototype.$http = axios; // Configurando o axios para intereção com o backend
 Vue.prototype.$eventHub = new Vue(); // Criando um canal de eventos entre componentes
