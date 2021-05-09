@@ -9,10 +9,11 @@ Dessa forma fiz um curso de 16 horas sobre Vue para aprender os conceitos para c
 
 Vamos a descrição das telas que realizei baseado no framework Vue.
 
-Login
+### Login
     Ao iniciar aplicação, sera preciso logar, pelo usuario e senha, 
-Lista dos Clientes
-Lista os Clientes, utilizando o metodo GET
+
+### Lista dos Clientes
+    Lista os Clientes, utilizando o metodo GET
 
 
 
