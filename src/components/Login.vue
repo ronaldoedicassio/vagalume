@@ -11,18 +11,14 @@
                             </v-toolbar>
                             <v-card-text>
                                 <v-form>
-                                    <v-text-field 
-                                    prepend-icon="mdi-account" 
-                                    name="login" 
-                                    label="Username" 
-                                    type="text"
-                                    ></v-text-field>
-                                    <v-text-field 
-                                    id="password" 
-                                    prepend-icon="mdi-lock" 
-                                    name="Password" 
-                                    label="Password" 
-                                    type="password"
+                                    <v-text-field prepend-icon="mdi-account" name="login" label="Username" type="text" v-model="dataToSend.username"></v-text-field>
+                                    <v-text-field
+                                        id="password"
+                                        prepend-icon="mdi-lock"
+                                        name="Password"
+                                        label="Password"
+                                        type="password"
+                                        v-model="dataToSend.password"
                                     ></v-text-field>
                                 </v-form>
                             </v-card-text>
@@ -48,10 +44,11 @@ export default {
 
     data: () => ({
         dataToSend: {
-            username: "projetoselecao", // TODO: Retirar, deixei preenchido para facilitar dev
-            password: "Selec@o1", // TODO: Retirar, deixei preenchido para facilitar dev
+            username: "",
+            password: "",
         }, // FIXME: Salvar o token no localstorage
     }),
+
     methods: {
         login() {
             axios

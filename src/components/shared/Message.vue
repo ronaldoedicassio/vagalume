@@ -36,6 +36,7 @@ export default {
             this.snackbar.text = msg;
             this.snackbar.color = "error";
             this.snackbar.visible = true;
+            <h1> Olaaaaa </h1>
         });
         this.$eventHub.$on("msgSuccess", (msg) => {
             this.snackbar.text = msg;
