@@ -2,18 +2,20 @@
 
 ## Realização Teste prático
 Projeto consiste em implementar 3 telas, no qual foi possível implementar duas telas.
-
-Se tratando de uma linguagem que eu não tinha conhecimento, tive que buscar ajudar para conseguir realizar implementação. Antes de chegar ao nível de qualquer dúvida eu precisa primeiro entender o conceito da linguagem, como o tempo era escasso, e muito conceito para ser aprendido em pouco tempo, fui direto para implementação utilizando o Vue.js. Seguindo conselho do meu amigo, pois a curva da aprendizagem seria mais fácil em comparação com Angular.
-
+Se tratando de uma linguagem que eu não tinha conhecimento até realização desse projeto, tive que buscar ajuda para conseguir realizar implementação. Antes de chegar ao nível de qualquer dúvida precisei primeiramente buscar leituras e vídeos compreender melhor a linguagem. 
+Para conseguir realizar a implementação, pedi ajuda de amigos que trabalham já com a linguagem para conseguir realizar a implementação, e com ajuda deles também foi possível conseguir avançar de maneira mais direcionada, em qual conteúdo estudar para realizar a implementação, dessa forma otimizando o tempo.
+Dessa forma, seguindo conselho do meu amigo, foi utilizado o framework Vue.js pois a curva da aprendizagem seria mais fácil em comparação com angular.
 Dessa forma fiz um curso de 16 horas sobre Vue para aprender os conceitos para conseguir implementar.
 
-Vamos a descrição das telas que realizei baseado no framework Vue.
+Breve descrição das duas telas que implementei
 
-    ### Login
-    Ao iniciar aplicação, sera preciso logar, pelo usuario e senha, 
-
-    ### Lista dos Clientes
-    Lista os Clientes, utilizando o metodo GET
+   ### Tela Login
+        Ao iniciar aplicação, será preciso logar, pelo usuário e senha, após as credenciais serem checados, um token será gerado e armazenado localmente na API, e uma mensagem será exibida, de sucesso ou falha.
+        Utilizando rotas, será direcionada para nova tela.
+   
+   ### Tela Lista dos Clientes
+    Uma rotina foi implementada para automatizar as requisições para os endpoints, dessa forma toda requisição realizada o token será enviado no cabeçalho da requisição.
+    Para apresentar os clientes no formato de tabela foi utilizado Vuetify.
 
 
 
