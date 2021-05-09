@@ -15,7 +15,7 @@ Breve descrição das duas telas que implementei
    
    ### Tela Lista dos Clientes
     Uma rotina foi implementada para automatizar as requisições para os endpoints, dessa forma toda requisição realizada o token será enviado no cabeçalho da requisição.
-    Para apresentar os clientes no formato de tabela foi utilizado Vuetify.
+    Para apresentar os dados dos clientes no formato de tabela foi utilizado Vuetify.
 
 
 
